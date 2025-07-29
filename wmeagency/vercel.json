@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "public/**", "use": "@vercel/static" },
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/public/$1" },
+    { "src": "/", "dest": "/public/index.html" }
+  ],
+  "env": {
+    "REDIS_URL": "@wme_redis_url",
+    "COMPLIANZ_API_KEY": "@wme_complianz_key"
+  }
+}
