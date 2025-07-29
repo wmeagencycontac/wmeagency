@@ -21,3 +21,5 @@ router.get('/', (req, res) => {
 
   res.json(metadata[page] || metadata.home);
 });
+
+module.exports = router;
