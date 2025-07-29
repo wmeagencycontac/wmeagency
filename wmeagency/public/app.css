@@ -93,21 +93,13 @@
     --mobile-h1-lh: 1;
     --mobile-h1-ls: 0.045rem;
     --mobile-h2: 1.875rem;
-Show all properties (97 more)
+/* ...existing code... */
 }
-*, :after, :before {
+*, *:after, *:before {
     box-sizing: border-box;
 }
-html[Attributes Style] {
-    -webkit-locale: "en-GB";
-}
-user agent stylesheet
-:root {
-    view-transition-name: root;
-}
-user agent stylesheet
-html {
-    display: block;
+/* Remove invalid html[Attributes Style] and user agent stylesheet rules */
+/* ...existing code... */
 }
 *, :after, :before {
     box-sizing: border-box;

@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // API routes
 app.use('/api/consent', require('./api/consent'));
-app.use('/api/metadata', require('./api/metadata'));
+app.use('/api/metadata', require('./api/metadata').router || require('./api/metadata'));
 app.use('/api/privacy-policy', require('./api/privacy-policy'));
 app.use('/api/track-links', require('./api/track-links'));
 app.use('/api/instagram-error', require('./api/instagram-error'));
